@@ -1,2 +1,2 @@
 # CSFLIX
-<img src="https://discord.com/channels/@me/940065779079069730/969044562276417567">
+<img src="https://cdn.discordapp.com/attachments/940065779079069730/969044561622081566/Screenshot_8.png">

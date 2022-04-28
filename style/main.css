@@ -1,0 +1,122 @@
+:root{
+    --amarelo:#FCA311;
+    --azul:#14213D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Base*/
+body{
+    background: var(--azul);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e5eee5;
+}
+
+header .container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--amarelo);
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #e5eee5;
+    margin-right: 10px;
+    transition: .2s ease all;
+}
+
+header nav a:hover{
+    color: #e5eee5c9;
+}
+
+/*Jogador principal*/
+.titulo{
+    margin-left: 15%;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    color: var(--amarelo);
+}
+.player-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/s1mple-iem.jpg');
+    height: 600px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.player-principal .descricao{
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.botao{
+    margin-left: 15%;
+    background-color:rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.player-principal .container{
+    width: 60%;
+}
+
+.box-player{
+    cursor: pointer;
+    width: 7%;
+    transition: .3s;
+}
+
+.box-player:hover{
+    animation: go-back 1s infinite alternate;
+    animation-delay: .1s;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.carrosel-players{
+    margin-top: 5px;
+}
+
+
